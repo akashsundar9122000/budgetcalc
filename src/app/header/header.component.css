@@ -1,0 +1,11 @@
+.head{
+  background-color: black;
+}
+
+button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

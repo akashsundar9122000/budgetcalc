@@ -1,0 +1,25 @@
+<div class="center">
+  <div class="row" >
+    <div class="col s20 m6">
+      <div class="card white darken-1" style="box-shadow: 5px 10px;">
+
+        <div *ngFor="let note of incomeList">
+          <div *ngIf="note.moneyType=='income' && note.creator==userId">
+          <div class="card-content green white-text darken-1 " style="margin-top:10px;">
+            <span class="card-title" style="text-align: center;">{{note.amount}}</span>
+          </div>
+          <div class="card-content black-text darken-1">
+            <span class="card-title">{{note.reason}}</span>
+          </div>
+          <button class="btn waves-red waves-effect" style="margin-bottom: 10px;" (click)="onEdit(note._id,note.amount,note.reason)">Edit
+            <i class="material-icons right">edit</i>
+          </button>
+          <button class="btn waves-red waves-effect red space" style="margin: 0px 10px 10px;" (click)="onDelete(note._id)">Delete
+            <i class="material-icons right">delete</i>
+          </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>

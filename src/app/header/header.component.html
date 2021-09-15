@@ -1,0 +1,9 @@
+<nav class="head">
+  <div class="nav-wrapper">
+    <a routerLink="/budget" class="brand-logo">Budget</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLink="/login" *ngIf="!isAuth">Login</a></li>
+      <li><button (click)="onLogout()" *ngIf="isAuth">Logout</button></li>
+    </ul>
+  </div>
+</nav>
