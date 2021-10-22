@@ -6,7 +6,7 @@ const Budget = require('./models/budget.model');
 const userRoute = require('./user');
 const checkAuth = require('./middleware/check-auth');
 
-mongoose.connect('mongodb+srv://akash:meanbudgetapp@cluster0.6984d.mongodb.net/budgetDatabase?retryWrites=true&w=majority').then(()=>{
+mongoose.connect('mongodb+srv://akash:<password>@cluster0.6984d.mongodb.net/DatabaseName?retryWrites=true&w=majority').then(()=>{
   console.log('Connected to database');
 }).catch(err=>{
   console.log(err);
